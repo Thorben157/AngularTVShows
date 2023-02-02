@@ -1,18 +1,16 @@
-<p>
-show-list works!
-</p>
-<td>{{s.id}}</td>
-<table>
+
+
+<table class="table table-striped table-hover">
   <thead>
-    <tr *ngFor="let s of shows">
+    <tr>
       <th>ID</th> 
       <th>Serientitel</th> 
     </tr>
   </thead>
-  <thead>
+  <tbody>
   <tr *ngFor="let s of shows">
-    <th>ID</th> 
-    <th>Serientitel</th> 
+    <th>{{s.id}}</th> 
+    <th>{{s.title}}</th> 
   </tr>
-</thead>
+  </tbody>
 </table>

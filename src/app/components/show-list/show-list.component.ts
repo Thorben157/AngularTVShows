@@ -9,9 +9,9 @@ import { Show } from '../../namensmodel/show';
 })
 export class ShowListComponent implements OnInit {
 
-  shows: Show[] = [];
+  
   constructor() { 
-    this.shows.push(new Show(1, 'Paw Patrol'))
+   
   }
 
   ngOnInit() {
