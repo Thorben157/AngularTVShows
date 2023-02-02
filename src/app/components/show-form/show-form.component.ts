@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Show } from '../../namensmodel/show';
+import { ShowDataService } from '../../services/show-data.service';
 
 @Component({
   selector: 'app-show-form',
@@ -7,7 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShowFormComponent implements OnInit {
 
-  constructor() { }
+ show : Show;
+
+  constructor(private showDataService: ShowDataService) { 
+    this.show = new Show(null, null);
+  }
 
   ngOnInit() {
   }
