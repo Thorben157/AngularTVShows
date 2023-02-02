@@ -9,6 +9,7 @@
       name="newShowID"
       type="number"
       placeholder="Hier die ID der Serie eingeben!"
+      [(ngModel)]="show.id"
     />
   </div>
   
@@ -20,6 +21,10 @@
       name="newShowTitel"
       type="string"
       placeholder="Hier den Serientitel eingeben!"
+      [(ngModel)]="show.title"
     />
+  </div>
+  <div class="mb-2"> <button type="submit" class="btn btn-primary">absenden</button>
+
   </div>
 </form>
