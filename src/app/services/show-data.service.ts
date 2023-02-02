@@ -11,4 +11,11 @@ export class ShowDataService {
     this.shows.push(new Show(3, 'Ninjago'))
    }
 
+   saveShow(show: Show) {
+
+    this.shows.push(show);
+    
+    }
+
+
 }

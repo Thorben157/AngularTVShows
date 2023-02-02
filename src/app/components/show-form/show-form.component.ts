@@ -15,6 +15,11 @@ export class ShowFormComponent implements OnInit {
     this.show = new Show(null, null);
   }
 
+  save() {
+
+    this.showDataService.saveShow(this.show);
+    
+    }
   ngOnInit() {
   }
 
