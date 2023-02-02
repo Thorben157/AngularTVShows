@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Show } from '../../namensmodel/show';
+import { ShowDataService } from '../../services/show-data.service';
+
 
 
 @Component({
@@ -10,8 +12,12 @@ import { Show } from '../../namensmodel/show';
 export class ShowListComponent implements OnInit {
 
   
-  constructor() { 
+  constructor(private showDataService: ShowDataService) { 
    
+  }
+
+  get shows(): Show[] {
+    return this.showDataService.shows;
   }
 
   ngOnInit() {
