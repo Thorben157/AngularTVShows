@@ -10,6 +10,7 @@ import { ShowDataService } from '../../services/show-data.service';
 export class ShowListComponent implements OnInit {
   constructor(private showDataService: ShowDataService) {}
 
+  
   get shows(): Show[] {
     return this.showDataService.shows;
   }
